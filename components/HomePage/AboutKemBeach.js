@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Style from "../../styles/aboutKemBeach.module.scss";
+import Style from "../../styles/HomePage_style/aboutKemBeach.module.scss";
 import { gsap, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -10,11 +10,11 @@ export default function AboutKemBeach() {
       duration: 1,
       y: "100",
       opacity: 0,
-      ease: { opacity: 0, ease: Power3.easeOut, delay: 5 },
+      ease: { opacity: 0, ease: Power3.easeOut, delay: 1 },
       scrollTrigger: {
         trigger: `.${Style.aboutKemBeach}`,
         markers: false,
-        start: "top 90%",
+        start: "top 80%",
         end: "bottom 70%",
         toggleActions: "play none none none",
         //options: play, pause, resume, reset, restart, complete, reverse,none
@@ -24,7 +24,7 @@ export default function AboutKemBeach() {
       duration: 1,
       x: "500",
       opacity: 0,
-      ease: { opacity: 0, ease: Power3.easeOut, delay: 5 },
+      ease: { opacity: 0, ease: Power3.easeOut, delay: 1 },
       scrollTrigger: {
         trigger: `.${Style.aboutKemBeach}`,
         markers: false,
@@ -41,7 +41,7 @@ export default function AboutKemBeach() {
         duration: 2,
         x: "0",
         opacity: 0,
-        ease: { opacity: 0, ease: Power3.easeOut, delay: 2 },
+        ease: { opacity: 0, ease: Power3.easeOut, delay: 1 },
         scrollTrigger: {
           trigger: `.${Style.aboutKemBeach}`,
           markers: false,

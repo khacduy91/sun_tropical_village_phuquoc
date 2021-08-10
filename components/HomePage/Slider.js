@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "../../styles/slider.module.scss";
+import Style from "../../styles/HomePage_style/slider.module.scss";
 
 export default function Slider() {
   return (

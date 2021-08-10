@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Style from "../../styles/sungroup.module.scss";
+import Style from "../../styles/HomePage_style/sungroup.module.scss";
 import SungroupItem from "../atom/SungroupItem";
 import { gsap, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";

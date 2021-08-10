@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Style from "../../styles/project.module.scss";
+import Style from "../../styles/HomePage_style/project.module.scss";
 import { gsap, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -9,11 +9,11 @@ export default function Project() {
       duration: 1,
       x: "1000",
       opacity: 0,
-      ease: { opacity: 0, ease: Power3.easeOut, delay: 5 },
+      ease: { opacity: 0, ease: Power3.easeOut, delay: 1 },
       scrollTrigger: {
         trigger: `.${Style.project}`,
         markers: false,
-        start: "top 40%",
+        start: "top 80%",
         end: "bottom 70%",
         toggleActions: "play none none none",
         //options: play, pause, resume, reset, restart, complete, reverse,none

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Style from "../../styles/header.module.scss";
+import Style from "../../styles/Layout_style/header.module.scss";
 
 export default function Header() {
   useEffect(() => {

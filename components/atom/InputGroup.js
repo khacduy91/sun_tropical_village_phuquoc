@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "../../styles/inputGroup.module.scss";
+import Style from "../../styles/Atom_style/inputGroup.module.scss";
 export default function InputGroup({
   name,
   inputChange,

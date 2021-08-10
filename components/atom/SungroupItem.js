@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "../../styles/sungroup.module.scss";
+import Style from "../../styles/HomePage_style/sungroup.module.scss";
 
 export default function SungroupItem({ heading, p }) {
   return (

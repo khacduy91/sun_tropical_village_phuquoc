@@ -92,3 +92,57 @@
     }
   }
 }
+@media screen and (max-width: 1200px) {
+  .project {
+    &__container {
+      &_wrapper {
+        align-items: center;
+      }
+    }
+    &__content {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    &__image {
+      &_wrapper {
+        padding-bottom: 447px;
+        // width: unset;
+        // height: 100%;
+        img {
+          height: 100%;
+          // width: 100%;
+          top: 0;
+          left: 0%;
+          // transform: translateX(50%);
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .project {
+    padding: 50px 0px;
+    &__container {
+      &_wrapper {
+        flex-direction: column;
+        align-items: unset;
+      }
+    }
+
+    &__image {
+      width: 100%;
+      order: 2;
+    }
+
+    &__content {
+      position: relative;
+      padding: 0;
+      top: unset;
+      right: unset;
+      padding: 10px 10px;
+      order: 1;
+    }
+  }
+}

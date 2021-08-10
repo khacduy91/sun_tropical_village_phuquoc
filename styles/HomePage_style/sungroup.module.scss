@@ -88,3 +88,15 @@
     }
   }
 }
+// @media screen and (max-width: 576px) {
+
+@media screen and (max-width: 576px) {
+  .sungroup {
+    &__content {
+      &_wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

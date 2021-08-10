@@ -1,6 +1,6 @@
 import React from "react";
 
-import Style from "../../styles/utilities.module.scss";
+import Style from "../../styles/HomePage_style/utilities.module.scss";
 
 export default function UtilitiesItem({ imgUrl, utility }) {
   return (

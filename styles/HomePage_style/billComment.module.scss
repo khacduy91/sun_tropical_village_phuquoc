@@ -11,7 +11,7 @@
     &_wrapper {
       position: relative;
       overflow: hidden;
-      padding-top: 400px;
+      padding-top: 30%;
       img {
         position: absolute;
         top: 0;
@@ -111,6 +111,25 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .billComment {
+    &__image {
+      &_wrapper {
+        padding-top: 500px;
+        img {
+          height: 100%;
+          width: auto;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &__content {
+      padding: 0 5px;
     }
   }
 }

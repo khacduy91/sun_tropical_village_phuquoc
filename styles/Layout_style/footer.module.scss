@@ -122,3 +122,44 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 50px 0;
+    &__container {
+      &_wrapper {
+        flex-direction: column;
+      }
+    }
+
+    &__logo {
+      margin-bottom: 15px;
+      &_wrapper {
+        // text-align: center;
+        padding: 0 15px;
+
+        h1 {
+          margin-bottom: 5px;
+          // font-weight: 600;
+        }
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    &__menu {
+      order: 0;
+    }
+
+    &__contact {
+      order: 1;
+      padding: 15px 0;
+    }
+
+    &__content {
+      order: 2;
+    }
+  }
+}

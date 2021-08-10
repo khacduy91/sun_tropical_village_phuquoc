@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Style from "../../styles/billComment.module.scss";
+import Style from "../../styles/HomePage_style/billComment.module.scss";
 import { gsap, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -7,14 +7,14 @@ gsap.registerPlugin(ScrollTrigger);
 export default function BillComment() {
   useEffect(() => {
     gsap.from(`.${Style.billComment__content}`, {
-      duration: 4,
+      duration: 1,
       x: "0",
       opacity: 0,
-      ease: { opacity: 0, ease: Power3.easeOut, delay: 5 },
+      ease: { opacity: 1, ease: Power3.easeOut, delay: 1 },
       scrollTrigger: {
         trigger: `.${Style.billComment}`,
         markers: false,
-        start: "top 60%",
+        start: "top 80%",
         end: "bottom 70%",
         toggleActions: "play none none none",
         //options: play, pause, resume, reset, restart, complete, reverse,none

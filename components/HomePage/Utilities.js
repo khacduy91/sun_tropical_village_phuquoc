@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import UtilitiesItem from "../atom/UtilitiesItem";
-import Style from "../../styles/utilities.module.scss";
+import Style from "../../styles/HomePage_style/utilities.module.scss";
 import { gsap, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);

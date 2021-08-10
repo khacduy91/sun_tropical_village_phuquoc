@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "../../styles/form.module.scss";
+import Style from "../../styles/HomePage_style/form.module.scss";
 import InputGroup from "../atom/InputGroup";
 
 export default function Form() {

@@ -12,7 +12,7 @@ const Layout = ({ children }) => (
       <title>Sun Tropical Phú Quốc</title>
     </Head>
 
-    <Header />
+    {/* <Header /> */}
 
     <main>{children}</main>
 
