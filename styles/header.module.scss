@@ -1,0 +1,141 @@
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  transition: all 0.3s ease;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.3) 30%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  &__fixedHeader {
+    background: #000000de;
+    position: fixed;
+  }
+
+  &__container {
+    max-width: 980px;
+    margin: auto;
+    position: relative;
+    padding-bottom: 20px;
+
+    &_wrapper {
+      display: flex;
+    }
+  }
+
+  &__logo {
+    flex: 0 0 175px;
+
+    &_wrapper {
+      padding: 20px 0 0 0;
+      cursor: pointer;
+
+      h1 {
+        font-size: 20px;
+        font-weight: 400;
+        font-family: Aptima;
+        line-height: 1.1;
+        margin-bottom: 0;
+        color: white;
+      }
+
+      span {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: white;
+      }
+    }
+  }
+
+  &__menu {
+    flex: 1 0 auto;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    &_wrapper {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      align-items: flex-end;
+      height: 100%;
+    }
+
+    &_item {
+      display: flex;
+      padding: 5px 10px;
+      letter-spacing: -0.5px;
+      align-items: flex-end;
+      flex-basis: auto;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 13px;
+      line-height: 16px;
+      color: white;
+      text-transform: uppercase;
+      position: relative;
+
+      // overflow: hidden;
+
+      &::after {
+        content: "";
+        width: 30%;
+        height: 1px;
+        display: block;
+        background: white;
+        position: absolute;
+        bottom: -10px;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        &::after {
+          bottom: 0px;
+          opacity: 1;
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  &__hotline {
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    &_wrapper {
+      a {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-family: Aptima;
+        text-transform: uppercase;
+        font-size: 12px;
+        position: relative;
+        display: block;
+        color: white;
+
+        &::after {
+          content: "";
+          width: 50%;
+          height: 1px;
+          display: block;
+          background: white;
+          position: absolute;
+          bottom: -1px;
+          left: 50%;
+          transform: translateX(-50%);
+          opacity: 1;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+}

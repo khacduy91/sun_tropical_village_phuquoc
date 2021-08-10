@@ -1,0 +1,112 @@
+.form {
+  padding: 100px 0;
+  background: rgb(245, 245, 245);
+
+  &__container {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__heading {
+    &_wrapper {
+      padding-bottom: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+
+      margin: 0 auto;
+      h4 {
+        flex: 0 1 auto;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        color: #5fa56f;
+        font-size: 25px;
+        line-height: 32px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: -0.13px;
+        position: relative;
+        text-align: justify;
+        margin-bottom: 15px;
+      }
+
+      p {
+        text-align: justify;
+        // max-width: 600px;
+        margin: 0;
+        flex: 0 0 auto;
+      }
+    }
+  }
+
+  &__group {
+    &_wrapper {
+      textarea {
+        width: 100%;
+        margin-top: 10px;
+        padding: 5px;
+        color: rgb(91, 91, 91);
+        outline: none;
+        border: 0.5px solid rgb(220, 220, 220);
+      }
+    }
+  }
+
+  &__submit {
+    padding: 20px;
+    &_wrapper {
+      display: flex;
+      justify-content: center;
+      button {
+        text-align: center;
+        background: transparent;
+        outline: none;
+        padding: 5px 20px;
+        border: 1px solid #00000030;
+        transition: all 0.3s ease;
+        position: relative;
+        cursor: pointer;
+        border-radius: 2px;
+        overflow: hidden;
+
+        span {
+          position: relative;
+          z-index: 2;
+          transition: all 0.1s ease;
+          //   letter-spacing: 1px;
+          font-size: 15px;
+          line-height: 26px;
+          font-family: Aptima;
+        }
+
+        &::after {
+          content: "";
+          background: #5fa56f;
+          width: 5px;
+          height: 5px;
+          position: absolute;
+          display: block;
+          opacity: 0;
+          border-radius: 50%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+          transition: all 0.75s ease;
+        }
+
+        &:hover {
+          color: white;
+          border-color: white;
+          &::after {
+            transform: scale(50);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

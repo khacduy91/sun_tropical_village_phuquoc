@@ -1,0 +1,124 @@
+.footer {
+  padding: 100px 0;
+  background-color: #b6deec;
+
+  &__container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    &_wrapper {
+      display: flex;
+    }
+  }
+
+  &__logo {
+    flex: 0 1 auto;
+
+    &_wrapper {
+      //   padding: 0 0px;
+      cursor: pointer;
+
+      h1 {
+        font-size: 25px;
+        font-weight: 400;
+        font-family: Aptima;
+        line-height: 1.1;
+        margin-bottom: 0;
+        color: #5fa56f;
+        margin: 0;
+        margin-bottom: 15px;
+      }
+
+      span {
+        display: block;
+        width: 100%;
+        // text-align: center;
+        color: black;
+      }
+    }
+  }
+
+  &__contact {
+    flex: 0 0 25%;
+    &_wrapper {
+      list-style: none;
+      padding: 0 15px;
+      margin: 0;
+
+      h5 {
+        margin: 0;
+        font-size: 15px;
+        line-height: 21px;
+        font-family: Aptima;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__item {
+    text-align: justify;
+    margin: 0;
+    font-size: 15px;
+    line-height: 21px;
+    font-family: Aptima;
+    // text-transform: uppercase;
+    letter-spacing: -0.5px;
+    font-weight: 300;
+  }
+
+  &__menu {
+    flex: 0 0 auto;
+    &_wrapper {
+      list-style: none;
+      padding: 0 15px;
+      margin: 0;
+    }
+  }
+  &__link {
+    text-align: justify;
+    margin: 0;
+    font-size: 15px;
+    line-height: 21px;
+    font-family: Aptima;
+    // text-transform: uppercase;
+    letter-spacing: -0.5px;
+    font-weight: 300;
+    text-decoration: underline;
+  }
+
+  &__content {
+    flex: 0 1 auto;
+    &_wrapper {
+      padding: 0 15px;
+
+      p {
+        margin: 0;
+        font-size: 15px;
+        line-height: 21px;
+        font-family: Aptima;
+        font-weight: 300;
+      }
+    }
+  }
+  &__social {
+    &_wrapper {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+  }
+  &__icon {
+    i {
+      display: block;
+      color: #5fa56f;
+      cursor: pointer;
+      padding: 10px 10px 0 0;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

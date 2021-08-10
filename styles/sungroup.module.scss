@@ -1,0 +1,90 @@
+.sungroup {
+  padding: 50px 0px;
+  background: white;
+  width: 100%;
+
+  &__container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 15px;
+    &_wrapper {
+      margin: 0;
+    }
+  }
+
+  &__heading {
+    &_wrapper {
+      padding-bottom: 35px;
+      h3 {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        color: #5fa56f;
+        font-size: 25px;
+        line-height: 32px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: -0.5px;
+        position: relative;
+
+        &::after {
+          content: "";
+          width: 5%;
+          height: 1px;
+          display: block;
+          background: #5fa56f;
+          position: absolute;
+          left: 50%;
+          bottom: -17px;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+
+  &__content {
+    &_wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    flex: 0 0 50%;
+
+    padding: 15px;
+
+    &_wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      border-left: 1px solid #5fa56f;
+      padding-left: 10px;
+
+      i {
+        color: #5fa56f;
+      }
+      p {
+        flex: 1 0 auto;
+        margin: 0;
+        margin: 10px 0;
+        padding: 0 10px;
+      }
+
+      h5 {
+        margin: 0;
+        padding: 0;
+        color: #5fa56f;
+        font-size: 25px;
+        line-height: 1;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: -0.5px;
+        position: relative;
+        // margin-bottom: 15px;
+      }
+    }
+  }
+}

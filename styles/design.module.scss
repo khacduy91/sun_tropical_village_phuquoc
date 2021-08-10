@@ -1,0 +1,131 @@
+.design {
+  padding: 100px 0;
+  background: rgb(230, 247, 253);
+
+  &__container {
+    max-width: 980px;
+    padding: 0 30px;
+    margin: 0 auto;
+    &_wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    flex: 1 0 auto;
+    &_wrapper {
+      position: relative;
+      padding-bottom: 50%;
+      width: 100%;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__content {
+    flex: 0 0 auto;
+    &_wrapper {
+      padding: 20px;
+    }
+  }
+
+  &__heading {
+    &_wrapper {
+      h3 {
+        margin: 0;
+        padding: 0;
+        color: #5fa56f;
+        font-size: 25px;
+        line-height: 32px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: -0.5px;
+        position: relative;
+        margin-bottom: 15px;
+
+        &::after {
+          content: "";
+          width: 15%;
+          height: 1px;
+          display: block;
+          background: #9ed3aa;
+          position: absolute;
+          bottom: -8px;
+        }
+      }
+    }
+  }
+
+  &__description {
+    &_wrapper {
+      p {
+        max-width: 300px;
+        text-align: justify;
+        margin: 0;
+        margin-bottom: 15px;
+        display: block;
+
+        &:nth-last-child(1) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    padding-left: 10px;
+    margin-top: 15px;
+    &_wrapper {
+      display: flex;
+      //   justify-content: center;
+      button {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-family: Aptima;
+        position: relative;
+        padding: 0;
+        font-size: 13px;
+        line-height: 26px;
+        color: black;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 120%;
+          height: 100%;
+          display: block;
+          background: transparent;
+          bottom: 0px;
+          left: 50%;
+          transition: all 0.3s ease;
+          z-index: 1;
+
+          transform: translateX(-50%);
+          border: 1px solid black;
+        }
+
+        &:hover {
+          &::after {
+            height: 0.5px;
+            border: none;
+            background: #00000080;
+          }
+        }
+      }
+    }
+  }
+}
